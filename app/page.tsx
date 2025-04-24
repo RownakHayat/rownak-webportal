@@ -1,10 +1,15 @@
-import HomePage from "@/components/HomePage/HomePage";
-import Image from "next/image";
+import Home from "./home/page";
+import ServicesDetails from "./services/page";
+import Works from "./works/page";
 
-export default function Home() {
+
+
+export default function page() {
   return (
    <>
-    <HomePage />
+  <Home />
+  <ServicesDetails />
+  <Works />
    </>
   );
 }

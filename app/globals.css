@@ -236,7 +236,7 @@ input:focus {
 .hero-content h1 span {
   font-size: 120px;
 }
-.hero-content .hero-img img {
+/* .hero-content .hero-img img {
   transition: 0.8s;
   transform: rotate(-15deg);
 }
@@ -250,20 +250,19 @@ input:focus {
   top: 50%;
   left: 25%;
   transform: translateY(-50%);
-}
+} */
 
-.cv-content a {
+/* .cv-content a {
   text-decoration: underline;
   transform: rotate(-90deg);
-  position: absolute;
   width: 110px;
   margin-left: 0;
   margin-right: 42px;
-  bottom: -75px;
+  bottom: -55px;
   left: 0;
   font-size: 16px;
   font-weight: 400;
-}
+} */
 
 .card-content {
   padding: 50px 15px 40px;
@@ -623,7 +622,7 @@ input:focus {
   transform: translateX(-200px);
 }
 .client-review-box:hover .img-content img {
-  transform: translateX(-267px);
+  transform: translateX(-26px);
   transition: 0.5s;
 }
 .client-review-box:hover .quote-content {

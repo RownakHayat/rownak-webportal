@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
+            fontFamily: {
         serif: ['"Source Serif 4"', 'serif'],
       },
       fontSize: {

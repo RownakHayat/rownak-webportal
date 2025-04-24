@@ -12,11 +12,11 @@ const Navbar = () => {
           {/* Logo */}
             <Link href="/" scroll={false}>
               <Image
-                src={"/images/Logo1.png"}
+                src={"/images/Frame 11.png"}
                 alt="Logo"
                 width={166}
                 height={60}
-                className=""
+                className="" 
                 priority
               />
             </Link>
@@ -25,11 +25,12 @@ const Navbar = () => {
           <nav className="flex-1">
             <ul className="flex flex-wrap justify-center items-center gap-6">
               {[
-                { href: '#services-area', label: 'Services' },
-                { href: '#work-area', label: 'Works' },
-                { href: '#skills-area', label: 'Skills' },
-                { href: '#client-review', label: 'Review' },
-                { href: '#contact-section', label: 'Contact' },
+                { href: '/home', label: 'Home' },
+                { href: '/services', label: 'Services' },
+                { href: '/works', label: 'Works' },
+                { href: '/skills', label: 'Skills' },
+                { href: '/review', label: 'Review' },
+                { href: '/contact', label: 'Contact' },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link href={href}>
