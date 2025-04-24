@@ -1,60 +1,75 @@
 'use client';
 
+import { AlignJustify, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+
+const navigation = [
+  { href: '/home', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/works', label: 'Works' },
+  { href: '/skills', label: 'Skills' },
+  { href: '/review', label: 'Review' },
+  { href: '/contact', label: 'Contact' },
+];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-center relative">
-          {/* Logo */}
-            <Link href="/" scroll={false}>
-              <Image
-                src={"/images/Frame 11.png"}
-                alt="Logo"
-                width={166}
-                height={60}
-                className="" 
-                priority
-              />
-            </Link>
+    <header className="bg-white shadow-md">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" scroll={false}>
+          <Image
+            src="/images/Frame 11.png"
+            alt="Logo"
+            width={166}
+            height={60}
+            priority
+            className="h-auto w-auto"
+          />
+        </Link>
 
-          {/* Navigation */}
-          <nav className="flex-1">
-            <ul className="flex flex-wrap justify-center items-center gap-6">
-              {[
-                { href: '/home', label: 'Home' },
-                { href: '/services', label: 'Services' },
-                { href: '/works', label: 'Works' },
-                { href: '/skills', label: 'Skills' },
-                { href: '/review', label: 'Review' },
-                { href: '/contact', label: 'Contact' },
-              ].map(({ href, label }) => (
-                <li key={href}>
-                  <Link href={href}>
-                    <span className="relative group">
-                      <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:transition-all group-hover:after:w-full text-xl font-medium text-slate-700">
-                        {label}
-                      </span>
+        {/* Toggle Button for Mobile */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="lg:hidden p-2 text-gray-600 hover:text-black focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X className="w-6 h-6" /> : <AlignJustify className="w-6 h-6" />}
+        </button>
+
+        {/* Navigation Links */}
+        <nav
+          className={`${
+            menuOpen ? 'block' : 'hidden'
+          } absolute lg:static top-[10%] left-0 w-full lg:w-auto bg-white lg:bg-transparent z-50 lg:flex items-center space-y-4 lg:space-y-0 lg:space-x-6 px-4 lg:px-0 mt-4 lg:mt-0 shadow-lg lg:shadow-none`}
+        >
+          <ul className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+            {navigation.map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href}>
+                  <span className="relative group">
+                    <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:transition-all group-hover:after:w-full text-xl font-medium text-slate-700">
+                      {label}
                     </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {/* Button */}
-          <div className="mt-4 lg:mt-0 lg:ms-3">
-            <Link
-              href="#contact-section"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full transition"
-            >
-              Hire me
-            </Link>
-          </div>
-        </div>
+                  </span>
+                </Link>
+              </li>
+            ))}
+            {/* CTA Button */}
+            <li className="mt-2 lg:mt-0">
+              <Link
+                href="#contact-section"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full transition"
+              >
+                Hire me
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
