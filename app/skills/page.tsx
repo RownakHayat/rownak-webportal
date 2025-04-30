@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
     <div className="py-16 bg-white" id="skills-area">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-600">What I Do</h2>
+          <h2 className="font-bold mb-4 text-8xl font-serif text-gray-800">What I Do</h2>
           <p className="text-lg text-gray-600 mt-4">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>

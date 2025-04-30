@@ -7,7 +7,7 @@ const Works: React.FC = () => {
     <div className="work-area" id="work-area">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-blue-600">Latest Works</h2>
+          <h2 className="font-bold mb-4 text-8xl font-serif text-gray-800">Latest Works</h2>
           <p className="text-lg text-gray-600 mt-4">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>

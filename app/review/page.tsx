@@ -7,7 +7,7 @@ const Review = () => {
     <div className="bg-white py-16" id="client-review">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Client Review</h2>
+          <h2 className="font-bold mb-4 text-8xl font-serif text-gray-800">Client Review</h2>
           <p className="text-gray-600 max-w-xl mx-auto">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>

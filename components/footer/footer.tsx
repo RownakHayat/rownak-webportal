@@ -1,7 +1,18 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+
+const backnavigation = [
+  { href: '/home', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/works', label: 'Works' },
+  { href: '/skills', label: 'Skills' },
+  { href: '/review', label: 'Review' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contact', label: 'Contact' },
+]; 
 
 const Footer: React.FC = () => {
   return (
@@ -29,27 +40,17 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center text-center space-y-6">
           {/* Menu Links */}
           <ul className="flex space-x-6 text-gray-600 text-sm font-medium">
-            <li>
-              <a href="/home" className="hover:text-blue-500 transition">Home</a>
-            </li>
-            <li>
-              <a href="/services" className="hover:text-blue-500 transition">Services</a>
-            </li>
-            <li>
-              <a href="/works" className="hover:text-blue-500 transition">Works</a>
-            </li>
-            <li>
-              <a href="/skills" className="hover:text-blue-500 transition">Skills</a>
-            </li>
-            <li>
-              <a href="/review" className="hover:text-blue-500 transition">Review</a>
-            </li>
-            <li>
-              <a href="/blog" className="hover:text-blue-500 transition">Blog</a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-blue-500 transition">Contact</a>
-            </li>
+          {backnavigation.map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href}>
+                  <span className="relative group">
+                    <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:transition-all group-hover:after:w-full text-xl font-medium text-slate-700">
+                      {label}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           {/* Back to Top */}

@@ -10,12 +10,12 @@ const Home = () => {
   return (
    <>
     <section className="pt-20 bg-[#e6f3fc] bg-gradient-to-tr from-blue-100 to-white">
-      <div className="grid grid-cols-2 container mx-auto px-4">
-        <div className="col-span-1">
+      <div className="grid grid-cols-12 container mx-auto px-4">
+        <div className="col-span-6">
           <div className="items-center">
             <h1 className="text-2xl md:text-4xl font-semibold mb-6">
-              <span className="block text-gray-600 mb-2">Hey, This is</span>
-              <strong className="text-black">Rownak Hayat</strong>
+              <span className="block text-gray-600 mb-2">Hey, I'm</span>
+              <strong className="font-bold mb-4 text-8xl font-serif text-gray-800">Rownak Hayat</strong>
             </h1>
           </div>
           <div className="">
@@ -23,21 +23,19 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-1">
+        <div className="col-span-6">
          <div className="flex justify-end">
          <div className=" relative">
-            <div className="">
               <Image
-                src={"/images/Banar.png"}
+                src={"/images/blog/bannerImage.jpg"}
                 alt="Resume image"
-                width={400}
-                height={400}
-                className="img-fluid relative radius-24"
+                width={600}
+                height={600}
+                className="img-fluid relative radius-24 rounded-3xl shadow-xl shadow-slate-400ring-4 ring-white ring-opacity-10"
                 priority
               />
-            </div>
             <div className=" "> 
-              <div className="absolute top-1/3 left-[-20%]">
+              <div className="absolute top-1/3 left-[-16%]">
                 <Image
                   src="/images/curved.png"
                   alt="Curved img"
@@ -62,7 +60,7 @@ const Home = () => {
                 </div>
               </div>
               {/* <div className="cv-content"> */}
-              <div className="absolute left-[-5rem] top-3/4 transform -translate-y-1/2">
+              <div className="absolute left-[-6rem] top-3/4 transform -translate-y-1/2">
               <Link
               href="/pdf/resume.pdf"
               download
