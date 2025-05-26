@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const BlogDetails: React.FC = () => {
+const BlogPage: React.FC = () => {
   return (
     <section id="blog-section" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -128,4 +128,4 @@ const BlogDetails: React.FC = () => {
   );
 }
 
-export default BlogDetails;
+export default BlogPage;

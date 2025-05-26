@@ -1,4 +1,4 @@
-import BlogDetails from "./blog/BlogDetails";
+import Blog from "./blog/page";
 import ContactSection from "./contact/page";
 import Home from "./home/page";
 import Review from "./review/page";
@@ -16,7 +16,7 @@ export default function page() {
   <Works />
   <Skills />
   <Review />
-  <BlogDetails />
+  <Blog />
   <ContactSection />
    </>
   );
