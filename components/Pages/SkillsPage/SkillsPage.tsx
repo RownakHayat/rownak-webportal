@@ -21,7 +21,7 @@ const SkillsPage: React.FC = () => {
     <div className="py-16 bg-white" id="skills-area">
       <div className="container mx-auto px-4">
         {/* Header Section */}
-        <div className="text-center mb-12 animate__animated animate__fadeInUp" data-wow-delay=".4s">
+        <div className="text-center mb-12 animate-fadeInDown " data-wow-delay=".4s">
           <h2 className="font-bold mb-4 text-4xl sm:text-6xl md:text-8xl font-serif text-gray-800">
             What I Do
           </h2>
@@ -35,7 +35,7 @@ const SkillsPage: React.FC = () => {
           {skillItems.map((item, idx) => (
             <div
               key={idx}
-              className="group relative text-center bg-white rounded-[24px] px-6 pt-4 mb-2 transition-all duration-500 hover:shadow-[10px_10px_15px_rgba(0,0,0,0.15)]"
+              className="group relative  text-center bg-white rounded-[24px] px-6 pt-4 mb-2 transition-all duration-500 hover:shadow-[10px_10px_15px_rgba(0,0,0,0.15)] animate-fadeInUp" data-wow-delay=".4s"
             >
               <Image
                 src={item.img}

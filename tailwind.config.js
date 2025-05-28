@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-            fontFamily: {
+      fontFamily: {
         serif: ['"Source Serif 4"', 'serif'],
       },
       fontSize: {
@@ -22,6 +22,20 @@ module.exports = {
       },
       colors: {
         black: '#000',
+      },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        fadeInDown: {
+          "0%": { opacity: 0, transform: "translateY(-20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        fadeInUp: "fadeInUp 0.6s ease-out forwards",
+        fadeInDown: "fadeInDown 0.6s ease-out forwards",
       },
     },
   },
