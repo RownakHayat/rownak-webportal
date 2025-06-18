@@ -38,20 +38,20 @@ const ServicesPage: React.FC = () => {
             <a
               href="/services-details"
               key={index}
-              className="group flex items-center border-b border-[#2c2c2c] bg-gray-50 pl-4 pr-[250px] pt-[30px] pb-[30px] rounded-lg shadow-sm transition-all duration-500 hover:pr-[50px]"
+              className="group flex items-center border-b border-[#2c2c2c] bg-gray-50 pl-4 pr-[250px] pt-[30px] pb-[30px] rounded-lg shadow-sm transition-all duration-300 hover:pr-[50px]"
             >
               {/* className="group flex items-center border-b border-[#2c2c2c] pl-4 pr-[220px] pt-[30px] pb-[30px] transition-all duration-500 hover:pr-[50px]"
             > */}
-              <div className="transition-all duration-500 group-hover:pl-[40px]">
+              <div className="transition-all duration-300 group-hover:pl-[40px]">
                 <Image
                   src={service.img}
                   alt="Services img"
                   width={180}
                   height={180}
-                  className="rounded-xl mr-4 transform -rotate-[15deg] transition duration-500"
+                  className="rounded-xl mr-4 transform -rotate-[15deg] transition duration-300"
                 />
               </div>
-              <h3 className="text-5xl font-semibold text-gray-800 flex-1 transform transition-all duration-500 group-hover:translate-x-[100px]">
+              <h3 className="text-5xl font-semibold text-gray-800 flex-1 transform transition-all duration-300 group-hover:translate-x-[100px]">
                 {service.title}
               </h3>
               <svg

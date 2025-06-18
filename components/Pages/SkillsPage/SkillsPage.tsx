@@ -35,7 +35,7 @@ const SkillsPage: React.FC = () => {
           {skillItems.map((item, idx) => (
             <div
               key={idx}
-              className="group relative  text-center bg-white rounded-[24px] px-6 pt-4 mb-2 transition-all duration-500 hover:shadow-[10px_10px_15px_rgba(0,0,0,0.15)] animate-fadeInUp" data-wow-delay=".4s"
+              className="group relative  text-center bg-white rounded-[24px] px-6 pt-4 mb-2 transition-all duration-300 hover:shadow-[10px_10px_15px_rgba(0,0,0,0.15)] animate-fadeInUp" data-wow-delay=".4s"
             >
               <Image
                 src={item.img}
@@ -45,7 +45,7 @@ const SkillsPage: React.FC = () => {
                 className="mx-auto pb-12 object-contain rounded-[24px] transition-all duration-300 group-hover:-mt-5"
               />
               {/* skill-content with fade-up effect */}
-              <div className="transition-all duration-800 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.25rem]">
+              <div className="transition-all duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.25rem]">
                 {item.label}
               </div>
             </div>

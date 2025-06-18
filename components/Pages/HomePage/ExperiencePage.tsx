@@ -34,7 +34,7 @@ const CounterCard: React.FC<CounterCardProps> = ({ target, title }) => {
         <div className=" text-7xl font-serif text-blue-600 mb-2">{count}</div>
         <p className="text-lg font-medium">{title}</p>
         <div className="relative mt-2">
-          <div className="h-0.5 bg-blue-600 w-20 transition-all duration-500 group-hover:w-full"></div>
+          <div className="h-0.5 bg-blue-600 w-20 transition-all duration-300 group-hover:w-full"></div>
         </div>
       </div>
     </div>

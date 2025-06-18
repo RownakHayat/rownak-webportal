@@ -72,7 +72,7 @@ const WorksPage: React.FC = () => {
                     height={300}
                     className="w-full h-64 relative  object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className=" z-10 absolute transition-transform duration-900 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-80 h-12 ml-4 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
+                  <div className=" z-10 absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-80 h-12 ml-4 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
                     <div className="flex justify-between ">
                       <span> {item.title}</span>
                       <span>
