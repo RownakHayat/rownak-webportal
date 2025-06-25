@@ -15,8 +15,8 @@ export default function page() {
   <ServicesDetails />
   <Works />
   <Skills />
-  <Review />
-  <Blog />
+  {/* <Review /> */}
+  {/* <Blog /> */}
   <ContactSection />
    </>
   );

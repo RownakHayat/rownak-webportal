@@ -47,7 +47,7 @@ const ReviewPage = () => {
                       />
 
                       {/* Quote Content (Initially Hidden, Shows on Hover) */}
-                      <div className="quote-content opacity-0 absolute rounded-r-3xl left-[200px] max-w-[600px] h-full bg-black transition-all duration-500 group-hover:opacity-100 group-hover:right-0 group-hover:left-auto group-hover:max-w-[906px]">
+                      <div className=" opacity-0 absolute rounded-r-3xl left-[200px] max-w-[600px] h-full transition-all duration-500 group-hover:opacity-100 !bg-black group-hover:right-0 group-hover:left-auto group-hover:max-w-[906px]">
                         <div className="inner-quote absolute top-1/2 -translate-y-1/2 px-8 py-10">
                           <div className="flex justify-center mb-4 gap-1">
                             {[...Array(5)].map((_, i) => (
@@ -69,6 +69,41 @@ const ReviewPage = () => {
                           </p>
                         </div>
                       </div>
+
+
+                      {/* <div className="relative group w-full h-[486px] overflow-hidden">
+                        <div className="quote-content rounded-r-3xl left-0 absolute rounded-l-3xl max-w-[100%] h-[486px] opacity-0 transition-all duration-500 group-hover:left-[25.40%] group-hover:right-0 right-0 group-hover:opacity-100 bg-black">
+                         
+                          <div className="flex justify-center mb-3">
+                            {Array(5).fill(0).map((_, i) => (
+                              <svg
+                                key={i}
+                                className="w-5 h-5 text-yellow-500"
+                                fill="currentColor"
+                                viewBox="0 0 256 256"
+                              >
+                                <path d="..." />
+                              </svg>
+                            ))}
+                          </div>
+
+                          <p className="text-gray-300 mb-4">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                          </p>
+                          <p className="text-gray-300">
+                            “Great service and excellent quality! Highly recommended.”
+                          </p>
+                        </div>
+
+                        <div className="client-content flex flex-col items-center justify-center transition-all duration-500 group-hover:opacity-0 group-hover:-translate-x-[200px]">
+                          <h3 className="client-title text-2xl font-semibold">{client.name}</h3>
+                          <p className="designation text-lg text-gray-600">{client.designation}</p>
+                          <p className="jobtitle text-lg text-gray-500">{client.company}</p>
+                        </div>
+                      </div> */}
+
+
+
                     </div>
 
                     {/* Client Info Block */}

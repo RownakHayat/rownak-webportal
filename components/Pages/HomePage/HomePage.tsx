@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
-import ExperiencesPage from '@/app/experience/page';
 import ExperiencePage from './ExperiencePage';
 
 const HomePage = () => {
