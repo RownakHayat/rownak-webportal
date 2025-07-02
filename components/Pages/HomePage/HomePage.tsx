@@ -13,7 +13,7 @@ const HomePage = () => {
         <div className="col-span-6">
           <div className="items-center">
             <h1 className="text-2xl md:text-4xl font-semibold mb-6">
-              <span className="block text-gray-600 mb-2">Hey, I'm</span>
+              <span className="block text-gray-600 mb-2">Hey, I am</span>
               <strong className="font-bold mb-4 text-8xl font-serif text-gray-800">Rownak Hayat</strong>
             </h1>
           </div>

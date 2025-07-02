@@ -16,38 +16,38 @@ const WorksPageDetails = () => {
         {
           id: '1',
           title: 'Web Portal',
-          images: ['/images/work/1.png'],
+          images: ['/images/work/MIAPSS.png'],
           filters: ['filter-uiux', 'filter-design', 'filter-graphics', 'filter-brand'],
         },
         {
           id: '2',
           title: 'UI/UX',
-          image: '/images/work/1.png',
+          image: '/images/work/SMEF.png',
           filters: ['filter-uiux', 'filter-design', 'filter-graphics'],
         },
-        {
-          id: '3',
-          title: 'Design',
-          image: '/images/work/2.png',
-          filters: ['filter-design', 'filter-graphics', 'filter-brand'],
-        },
-        {
-          id: '4',
-          title: 'Branding',
-          image: '/images/work/3.png',
-          filters: ['filter-brand', 'filter-design'],
-        },
-        {
-          id: '5',
-          title: 'Graphics',
-          image: '/images/work/4.png',
-          filters: ['filter-uiux', 'filter-brand'],
-        },
+        // {
+        //   id: '3',
+        //   title: 'Design',
+        //   image: '/images/work/2.png',
+        //   filters: ['filter-design', 'filter-graphics', 'filter-brand'],
+        // },
+        // {
+        //   id: '4',
+        //   title: 'Branding',
+        //   image: '/images/work/3.png',
+        //   filters: ['filter-brand', 'filter-design'],
+        // },
+        // {
+        //   id: '5',
+        //   title: 'Graphics',
+        //   image: '/images/work/4.png',
+        //   filters: ['filter-uiux', 'filter-brand'],
+        // },
       ],
     },
     {
       id: '2',
-      label: 'Ui/Ux',
+      label: 'SMEF Foundetion ',
       filtersAll: [
         {
           id: '1',
@@ -57,57 +57,57 @@ const WorksPageDetails = () => {
         },
         {
           id: '2',
-          title: 'Branding',
+          title: 'Bangladesh Navy',
           image: '/images/work/3.png',
           filters: ['filter-brand', 'filter-design'],
         }
       ],
     },
-    {
-      id: '3',
-      label: 'Web Design',
-      filtersAll: [
-        {
-          id: '1',
-          title: 'All',
-          images: ['/images/work/1.png'],
-          filters: ['filter-brand'],
-        }
+    // {
+    //   id: '3',
+    //   label: 'Web Design',
+    //   filtersAll: [
+    //     {
+    //       id: '1',
+    //       title: 'All',
+    //       images: ['/images/work/1.png'],
+    //       filters: ['filter-brand'],
+    //     }
 
-      ],
-    },
-    {
-      id: '4',
-      label: 'Branding',
-      filtersAll: [
-        {
-          id: '1',
-          title: 'Design',
-          image: '/images/work/2.png',
-          filters: ['filter-design', 'filter-graphics', 'filter-brand'],
-        },
-        {
-          id: '2',
-          title: 'Branding',
-          image: '/images/work/3.png',
-          filters: ['filter-brand', 'filter-design'],
-        }
+    //   ],
+    // },
+    // {
+    //   id: '4',
+    //   label: 'Branding',
+    //   filtersAll: [
+    //     {
+    //       id: '1',
+    //       title: 'Design',
+    //       image: '/images/work/2.png',
+    //       filters: ['filter-design', 'filter-graphics', 'filter-brand'],
+    //     },
+    //     {
+    //       id: '2',
+    //       title: 'Branding',
+    //       image: '/images/work/3.png',
+    //       filters: ['filter-brand', 'filter-design'],
+    //     }
 
-      ],
-    },
-    {
-      id: '5',
-      label: 'Graphics',
-      filtersAll: [
-        {
-          id: '1',
-          title: 'All',
-          images: ['/images/work/1.png'],
-          filters: ['filter-uiux', 'filter-design', 'filter-graphics', 'filter-brand'],
-        }
+    //   ],
+    // },
+    // {
+    //   id: '5',
+    //   label: 'Graphics',
+    //   filtersAll: [
+    //     {
+    //       id: '1',
+    //       title: 'All',
+    //       images: ['/images/work/1.png'],
+    //       filters: ['filter-uiux', 'filter-design', 'filter-graphics', 'filter-brand'],
+    //     }
 
-      ],
-    },
+    //   ],
+    // },
   ];
 
   const [tabIndex, setTabIndex] = useState(0);
@@ -120,7 +120,7 @@ const WorksPageDetails = () => {
           <h2 className="text-7xl font-serif font-bold text-black">Portfolio</h2>
           <Link href="/" className="flex justify-center items-center gap-2 mt-4 text-sm text-black hover:underline">
             <House className="w-5 h-5" />
-            Home
+             Home
           </Link>
         </div>
       </div>
