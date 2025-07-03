@@ -33,7 +33,7 @@ const BlogPage: React.FC = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Creativity<br />by God</h3>
               <p className="text-gray-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
               </p>
               <a href="#" className="inline-block bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition">
                 Read more

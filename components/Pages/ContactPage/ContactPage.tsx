@@ -29,9 +29,9 @@ const ContactPage: React.FC = () => {
             className="p-8 rounded-lg bg-cover bg-center"
             style={{ backgroundImage: `url('/images/contact.png')`, width:"100%", height: "100%" }}
           >
-            <h4 className="text-2xl font-semibold mb-4 text-white">Let's Connect</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-white">Lets Connect</h4>
             <p className="mb-6 text-gray-300">
-              Let's connect on social media. If you'd like to just connect and find me, social media is a great way.
+              Lets connect on social media. If you had like to just connect and find me, social media is a great way.
             </p>
 
             <div className="flex space-x-4">
