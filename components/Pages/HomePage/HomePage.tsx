@@ -9,16 +9,19 @@ const HomePage = () => {
   return (
    <>
     <section className="pt-20 bg-[#e6f3fc] bg-gradient-to-tr from-blue-100 to-white">
-      <div className="grid grid-cols-12 container mx-auto px-4">
+
+       <div className="px-8 md:px-16 py-16">
+      <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-12 container mx-auto px-4">
         <div className="col-span-6">
           <div className="items-center">
             <h1 className="text-2xl md:text-4xl font-semibold mb-6">
-              <span className="block text-gray-600 mb-2">Hey, I am</span>
+              <span className="block text-gray-600 mb-2">Hey, I’m</span>
               <strong className="font-bold mb-4 text-8xl font-serif text-gray-800">Rownak Hayat</strong>
             </h1>
           </div>
           <div className="">
-            <h4 className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, velit quis. Harum libero nam odio blanditiis cumque, nulla fugit. Consectetur, sint rem voluptas quia quae sit adipisci quod et distinctio.</h4>
+            <h4 className='text-lg'>I’m Frontend Developer with <span className='font-semibold'>3+ years</span> of experience in building clean, responsive, and user-friendly web applications. I specialize in <span className='font-semibold'>React.js and Next.js,</span> with strong skills in <span className='font-semibold'>API integration, UI optimization, and cross-functional collaboration.</span> I’m passionate about crafting elegant solutions and continuously evolving with the latest web technologies.</h4>
           </div>
         </div>
 
@@ -61,7 +64,7 @@ const HomePage = () => {
               {/* <div className="cv-content"> */}
               <div className="absolute left-[-6rem] top-3/4 transform -translate-y-1/2">
               <Link
-              href="/pdf/resume.pdf"
+              href="/RownakHayat-Resume .pdf"
               download
               target="_blank"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full transition"
@@ -78,8 +81,17 @@ const HomePage = () => {
          </div>
         </div>
       </div>
+      </div>
+      </div>
+
+    
     </section>
-     <ExperiencePage />
+    <div className="px-8 md:px-16 py-16">
+      <div className="max-w-6xl mx-auto">
+            <ExperiencePage />
+      </div>
+      </div>
+   
    </>
   );
 };

@@ -43,9 +43,9 @@ const CounterCard: React.FC<CounterCardProps> = ({ target, title }) => {
 
 const ExperiencePage: React.FC = () => {
   const data = [
-    { target: 4, title: 'Years of Experience' },
-    { target: 150, title: 'Completed Projects' },
-    { target: 200, title: 'Happy Clients' },
+    { target: 3, title: 'Years of Experience' },
+    { target: 6, title: 'Completed Projects' },
+    { target: 20, title: 'Happy Clients' },
   ]
 
   return (

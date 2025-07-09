@@ -16,6 +16,14 @@ const backnavigation = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white pt-10">
+
+       <div className="px-8 md:px-16 py-16">
+      <div className="max-w-6xl mx-auto">
+
+      </div>
+      </div>
+
+
       {/* Top Border Line */}
       {/* <div className="border-t border-gray-300"></div> */}
 

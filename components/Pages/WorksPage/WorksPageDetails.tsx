@@ -15,109 +15,100 @@ const WorksPageDetails = () => {
       filtersAll: [
         {
           id: '1',
-          title: 'Web Portal',
+          title: 'MIAPSS',
           images: ['/images/work/MIAPSS.png'],
-          filters: ['filter-uiux', 'filter-design', 'filter-graphics', 'filter-brand'],
+          link: 'http://103.84.36.246:5886/login',
+          filters: ['filter-miapss'],
         },
         {
           id: '2',
-          title: 'UI/UX',
+          title: 'SMEF Foundetion ',
           image: '/images/work/SMEF.png',
-          filters: ['filter-uiux', 'filter-design', 'filter-graphics'],
+          link: 'https://services.smef.gov.bd/',
+          filters: ['filter-smef'],
         },
-        // {
-        //   id: '3',
-        //   title: 'Design',
-        //   image: '/images/work/2.png',
-        //   filters: ['filter-design', 'filter-graphics', 'filter-brand'],
-        // },
-        // {
-        //   id: '4',
-        //   title: 'Branding',
-        //   image: '/images/work/3.png',
-        //   filters: ['filter-brand', 'filter-design'],
-        // },
-        // {
-        //   id: '5',
-        //   title: 'Graphics',
-        //   image: '/images/work/4.png',
-        //   filters: ['filter-uiux', 'filter-brand'],
-        // },
+        {
+          id: '3',
+          title: 'HRM-SIMEC Help Desk',
+          image: '/images/work/SIMEC-HELP-Desk.png',
+          link: 'https://hrm-simec-help-desk.netlify.app/',
+          filters: ['filter-hrm'],
+        },
+        {
+          id: '4',
+          title: 'e-buisness',
+          image: '/images/work/e-buisness.png',
+          link: 'https://e-buisness.netlify.app/',
+          filters: ['filter-eBuisness'],
+        },
+      ],
+    },
+     {
+      id: '2',
+      label: 'MIAPSS',
+      filtersAll: [
+        {
+          id: '1',
+          title: 'Management Information And Planning Support System',
+          image: '/images/work/MIAPSS.png',
+          link: 'http://103.84.36.246:5886/login',
+          filters: ['filter-miapss']
+        }
       ],
     },
     {
-      id: '2',
+      id: '3',
       label: 'SMEF Foundetion ',
       filtersAll: [
         {
           id: '1',
           title: 'All',
-          images: ['/images/work/1.png'],
-          filters: ['filter-uiux'],
+          images: ['/images/work/SMEF.png'],
+          link: 'https://services.smef.gov.bd/',
+          filters: ['filter-smef'],
         },
-        {
-          id: '2',
-          title: 'Bangladesh Navy',
-          image: '/images/work/3.png',
-          filters: ['filter-brand', 'filter-design'],
-        }
       ],
     },
-    // {
-    //   id: '3',
-    //   label: 'Web Design',
-    //   filtersAll: [
-    //     {
-    //       id: '1',
-    //       title: 'All',
-    //       images: ['/images/work/1.png'],
-    //       filters: ['filter-brand'],
-    //     }
-
-    //   ],
-    // },
-    // {
-    //   id: '4',
-    //   label: 'Branding',
-    //   filtersAll: [
-    //     {
-    //       id: '1',
-    //       title: 'Design',
-    //       image: '/images/work/2.png',
-    //       filters: ['filter-design', 'filter-graphics', 'filter-brand'],
-    //     },
-    //     {
-    //       id: '2',
-    //       title: 'Branding',
-    //       image: '/images/work/3.png',
-    //       filters: ['filter-brand', 'filter-design'],
-    //     }
-
-    //   ],
-    // },
-    // {
-    //   id: '5',
-    //   label: 'Graphics',
-    //   filtersAll: [
-    //     {
-    //       id: '1',
-    //       title: 'All',
-    //       images: ['/images/work/1.png'],
-    //       filters: ['filter-uiux', 'filter-design', 'filter-graphics', 'filter-brand'],
-    //     }
-
-    //   ],
-    // },
+    {
+      id: '4',
+      label: 'HRM ',
+      filtersAll: [
+        {
+          id: '1',
+          title: 'HRM-SIMEC Help Desk',
+          image: '/images/work/SIMEC-HELP-Desk.png',
+          link: 'https://hrm-simec-help-desk.netlify.app/',
+          filters: ['filter-hrm'],
+        },
+      ],
+    },
+    {
+      id: '5',
+      label: 'e-Buisness ',
+      filtersAll: [
+        {
+          id: '1',
+          title: 'e-buisness',
+          image: '/images/work/e-buisness.png',
+          link: 'https://e-buisness.netlify.app/',
+          filters: ['filter-eBuisness'],
+        },
+      ],
+    },
+    
+   
+   
   ];
 
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div>
-      {/* Breadcrumb */}
+    <div className="px-8 md:px-16 py-16">
+      <div className="max-w-6xl mx-auto">
+        {/* Breadcrumb */}
       <div className="py-10 bg-gray-100 animate-fadeInDown" data-wow-delay=".4s">
         <div className="container mx-auto text-center">
-          <h2 className="text-7xl font-serif font-bold text-black">Portfolio</h2>
+          <h2 className="text-5xl font-serif font-bold text-gray-400">Rownak Hayat</h2>
           <Link href="/" className="flex justify-center items-center gap-2 mt-4 text-sm text-black hover:underline">
             <House className="w-5 h-5" />
              Home
@@ -161,7 +152,11 @@ const WorksPageDetails = () => {
                           />
                           <div className=" absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-96 h-12 ml-3 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
                             <div className="flex justify-between ">
-                             <span> {item.title}</span>
+                             <span>
+                              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                {item.title}
+                              </a>
+                            </span>
                               <span>
                                 <svg
                                   className="w-8 h-8 text-white  group-hover:text-blue-600"
@@ -192,6 +187,14 @@ const WorksPageDetails = () => {
           </div>
         </Tabs>
       </div>
+
+      </div>
+
+
+
+      
+
+
     </div>
   );
 };

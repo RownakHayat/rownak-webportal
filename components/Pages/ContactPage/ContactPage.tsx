@@ -1,22 +1,65 @@
 'use client';
 
-import { FacebookIcon, GitBranch, LinkedinIcon } from 'lucide-react';
-import { useState, FormEvent } from 'react';
+import { MapPin, PhoneCall, Send, Globe } from 'lucide-react';
+import Link from 'next/link';
+
 
 const ContactPage: React.FC = () => {
-  const [response, setResponse] = useState<string>('');
+  // const [response, setResponse] = useState<string>('');
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setResponse('Message sent successfully!');
-  };
+  // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setResponse('Message sent successfully!');
+  // };
+
+
+  const contactItems = [
+    {
+      icon: <MapPin className="text-blue-400 w-7 h-7" />,
+      label: 'ADDRESS',
+      value: 'Uttara, Dhaka,\nBangladesh',
+    },
+    {
+      icon: <PhoneCall className="text-blue-400 w-7 h-7" />,
+      label: 'CONTACT NUMBER',
+      value: '+8801841838986',
+    },
+    {
+      icon: <Send className="text-blue-400 w-7 h-7" />,
+      label: 'EMAIL ADDRESS',
+      value: 'rownakhayat@gmail.com',
+    },
+    {
+      icon: <Globe className="text-blue-400 w-7 h-7" />,
+      label: (
+        <Link
+          href="/RownakHayat-Resume .pdf"
+          download
+          target="_blank"
+          className="inline-bloc font-semibold py-2 rounded-full transition"
+        >
+          DOWNLOAD RESUME
+        </Link>
+      ),
+      // value: (
+      //    <Link
+      //         href="/RownakHayat-Resume .pdf"
+      //         download
+      //         target="_blank"
+      //         className="inline-bloc font-semibold py-2 px-5 rounded-full transition"
+      //       >
+      //     Click here to download
+      //   </Link>
+      // ),
+    },
+  ];
 
   return (
     <div className="px-8 md:px-16 py-16">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="font-bold mb-4 text-8xl font-serif text-gray-800">Get in Touch</h2>
+          <h2 className="font-bold mb-4 text-5xl font-serif text-gray-800">Connect me </h2>
           <p className="text-gray-600">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>
@@ -25,16 +68,16 @@ const ContactPage: React.FC = () => {
         <div className="grid grid-cols-12 gap-6">
           <div className="sm:col-span-12 lg:col-span-6 ">
             {/* Left - Contact Info */}
-          <div
-            className="p-8 rounded-lg bg-cover bg-center"
-            style={{ backgroundImage: `url('/images/contact.png')`, width:"100%", height: "100%" }}
-          >
-            <h4 className="text-2xl font-semibold mb-4 text-white">Lets Connect</h4>
-            <p className="mb-6 text-gray-300">
-              Lets connect on social media. If you had like to just connect and find me, social media is a great way.
-            </p>
+            <div
+              className="p-8 rounded-lg bg-cover bg-center"
+              style={{ backgroundImage: `url('/images/contact.png')`, width: "100%", height: "100%" }}
+            >
+              <h4 className="text-2xl font-semibold mb-4 text-white">Get in Touch</h4>
+              <p className="mb-6 text-gray-300">
+                Let’s connect on social media. If you’d like to reach out or collaborate, these platforms are a great place to start.
+              </p>
 
-            <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <FacebookIcon />
               </a>
@@ -42,16 +85,37 @@ const ContactPage: React.FC = () => {
                 <GitBranch />
               </a>
               <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
+                <PhoneCall />
+              </a>
+              <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <LinkedinIcon/>
               </a>
-              {/* You can add more social icons here */}
+            </div> */}
             </div>
-          </div>
 
           </div>
           <div className="sm:col-span-12 lg:col-span-6">
             {/* Right - Contact Form */}
-          <div className="">
+            <div className="">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 text-center text-black">
+                {contactItems.map((item, index) => (
+                  <div key={index} className="flex flex-col items-center space-y-3 cursor-pointer">
+                    <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-sm mb-1 ">{item.label}</p>
+                      <p className="text-sm whitespace-pre-line">
+                        {typeof item.value === 'string' ? item.value : item.value}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* <div className="grid grid-cols-12 space-y-8">
+           
             <form onSubmit={handleSubmit} className="grid grid-cols-12 space-y-8">
 
               <div className="col-span-12">
@@ -93,8 +157,8 @@ const ContactPage: React.FC = () => {
               </button>
               </div>
               
-            </form>
-          </div>
+            </form> 
+          </div>*/}
           </div>
         </div>
       </div>
