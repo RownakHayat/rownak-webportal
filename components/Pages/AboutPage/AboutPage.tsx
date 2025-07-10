@@ -22,13 +22,13 @@ const profileDetails = [
 const AboutMe = () => {
   return (
    <div className="px-8 md:px-16 py-16">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl container mx-auto ">
 
-       <h2 className="font-bold mb-8 text-5xl font-serif text-gray-800 text-center">About Me</h2>
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20">
+       <h2 className="font-bold mb-8 text-5xl font-serif text-gray-800 text-center text-nowrap">About Me</h2>
+      <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Left Column */}
         <div>
-          <div className="flex gap-6 items-center mb-8">
+          <div className="lg:flex gap-6 items-center mb-8">
             <Image
               src="/about.jpeg" // Update to your actual image path
               alt="Profile"
@@ -69,15 +69,15 @@ const AboutMe = () => {
         {/* Right Column */}
         <div>
          
-         <p className="text-black mb-6 leading-relaxed">
+         <p className="text-black mb-6 leading-relaxed text-justify">
           With over 3 years of hands-on experience in software engineering, I specialize in building modern, responsive, and high-performance frontend applications. My expertise lies in React.js and Next.js, where I focus on creating intuitive user interfaces and seamless user experiences. I am also proficient in integrating RESTful and GraphQL APIs, ensuring smooth data flow and dynamic functionality across applications. I’m passionate about turning complex requirements into clean, scalable code and thrive on delivering impactful, user-centric solutions.
         </p>
 
           <div className="space-y-4 text-sm">
             {profileDetails.map((item, index) => (
-              <div key={index} className="flex">
-                <span className="w-40 font-semibold text-gray-400">{item.label}:</span>
-                <span className="text-black">{item.value}</span>
+              <div key={index} className="grid grid-cols-12">
+                <div className="col-span-6 font-semibold text-gray-400">{item.label}:</div>
+                <div className="col-span-6 text-black">{item.value}</div>
               </div>
             ))}
           </div>

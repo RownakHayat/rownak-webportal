@@ -5,26 +5,20 @@ import React from 'react';
 
 const backnavigation = [
   { href: '/home', label: 'Home' },
-  { href: '/services', label: 'Services' },
+  // { href: '/services', label: 'Services' },
   { href: '/works', label: 'Works' },
-  { href: '/skills', label: 'Skills' },
-  { href: '/review', label: 'Review' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+  // { href: '/review', label: 'Review' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ]; 
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white pt-10">
-
-       <div className="px-8 md:px-16 py-16">
-      <div className="max-w-6xl mx-auto">
-
-      </div>
-      </div>
-
-
-      {/* Top Border Line */}
+    <footer className="bg-white border-t border-b border-gray-500">
+      <div className="px-8 md:px-16 py-6">
+      <div className="max-w-6xl container mx-auto px-4">
+        {/* Top Border Line */}
       {/* <div className="border-t border-gray-300"></div> */}
 
       {/* Logo */}
@@ -37,21 +31,21 @@ const Footer: React.FC = () => {
           className="object-contain opacity-35"
         />
       </div> */}
-        <div className="flex justify-center items-center border-t border-b border-gray-500">
-          <h1 className="opacity-15 text-[220px] font-serif leading-tight">
+        <div className="flex justify-center items-center ">
+          <h1 className="opacity-15 sm:text-[90px] lg:text-[100px] font-serif leading-tight text-nowrap">
             ROWNAK HAYAT
           </h1>
         </div>
            {/* Footer Navigation Menu */}
-      <div className="container mx-auto py-3 px-4">
-        <div className="flex flex-col items-center text-center space-y-6">
+      <div className=" text-center py-3 px-4">
+        <div className="flex justify-center items-center text-center space-y-6">
           {/* Menu Links */}
-          <ul className="flex space-x-6 text-gray-600 text-sm font-medium">
+          <ul className="flex space-x-6 text-gray-600 sm:text-[10px] lg:text-sm font-medium">
           {backnavigation.map(({ href, label }) => (
               <li key={href}>
                 <Link href={href}>
                   <span className="relative group">
-                    <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:transition-all group-hover:after:w-full text-xl font-medium text-slate-700">
+                    <span className="after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:transition-all group-hover:after:w-full sm:text-sm lg:text-xl font-medium text-slate-700">
                       {label}
                     </span>
                   </span>
@@ -59,18 +53,19 @@ const Footer: React.FC = () => {
               </li>
             ))}
           </ul>
-
-          {/* Back to Top */}
+        </div>
+         {/* Back to Top */}
           <div className="pt-4">
             <a href="#" className="text-blue-600 hover:underline text-sm">
               Back to Top
             </a>
           </div>
-        </div>
       </div>
 
       {/* Bottom Divider */}
-      <div className="border-t border-gray-300 mt-8"></div>
+      </div>
+      </div>
+      
     </footer>
   );
 };

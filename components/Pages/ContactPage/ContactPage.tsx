@@ -56,17 +56,16 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="px-8 md:px-16 py-16">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
+      <div className="max-w-6xl container mx-auto ">
         <div className="text-center mb-12">
-          <h2 className="font-bold mb-4 text-5xl font-serif text-gray-800">Connect me </h2>
-          <p className="text-gray-600">
+          <h2 className="font-bold mb-4 text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
+          <p className="text-gray-600 text-justify">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>
         </div>
 
         <div className="grid grid-cols-12 gap-6">
-          <div className="sm:col-span-12 lg:col-span-6 ">
+          <div className="col-span-12 lg:col-span-6">
             {/* Left - Contact Info */}
             <div
               className="p-8 rounded-lg bg-cover bg-center"
@@ -94,7 +93,7 @@ const ContactPage: React.FC = () => {
             </div>
 
           </div>
-          <div className="sm:col-span-12 lg:col-span-6">
+            <div className="col-span-12 lg:col-span-6">
             {/* Right - Contact Form */}
             <div className="">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 text-center text-black">
