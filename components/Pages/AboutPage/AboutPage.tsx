@@ -24,7 +24,7 @@ const AboutMe = () => {
    <div className="px-8 md:px-16 py-16">
       <div className="max-w-6xl container mx-auto ">
 
-       <h2 className="font-bold mb-8 text-5xl font-serif text-gray-800 text-center text-nowrap">About Me</h2>
+       <h2 className="font-bold mb-8 text-3xl lg:text-5xl font-serif text-gray-800 text-center text-nowrap">About Me</h2>
       <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Left Column */}
         <div>

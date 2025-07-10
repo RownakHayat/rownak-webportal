@@ -58,7 +58,7 @@ const ContactPage: React.FC = () => {
     <div className="px-8 md:px-16 py-16">
       <div className="max-w-6xl container mx-auto ">
         <div className="text-center mb-12">
-          <h2 className="font-bold mb-4 text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
+          <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
           <p className="text-gray-600 text-justify">
             I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
           </p>

@@ -22,14 +22,14 @@ const WorksPageDetails = () => {
         },
         {
           id: '2',
-          title: 'SMEF Foundetion ',
+          title: 'SMEF ',
           image: '/images/work/SMEF.png',
           link: 'https://services.smef.gov.bd/',
           filters: ['filter-smef'],
         },
         {
           id: '3',
-          title: 'HRM-SIMEC Help Desk',
+          title: 'HRM',
           image: '/images/work/SIMEC-HELP-Desk.png',
           link: 'https://hrm-simec-help-desk.netlify.app/',
           filters: ['filter-hrm'],
@@ -118,7 +118,7 @@ const WorksPageDetails = () => {
 
         {/* Work Grid */}
         <div className="py-16 animate-fadeInUp" data-wow-delay=".4s">
-          <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} className="grid grid-cols-12 gap-5">
+          <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} className="grid grid-cols-12 gap-0 lg:gap-5">
             <div className="col-span-12 lg:col-span-2">
               <TabList className=" space-y-2 mb-8">
                 {items.map((cat) => (
@@ -136,7 +136,7 @@ const WorksPageDetails = () => {
             <div className="col-span-12 lg:col-span-10">
               {items.map((itemGroup) => (
                 <TabPanel key={itemGroup.id}>
-                  <div className="grid grid-cols-12 gap-8">
+                  <div className="grid grid-cols-12 gap-0 lg:gap-8 space-y-6 lg:space-y-0">
                     {itemGroup.filtersAll.map((item) => {
                       const images = item.images || (item.image ? [item.image] : []);
 
@@ -150,7 +150,7 @@ const WorksPageDetails = () => {
                               height={250}
                               className="w-full h-64 relative  object-cover transition-transform duration-300 group-hover:scale-105"
                             />
-                            <div className=" absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-96 h-12 ml-3 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
+                            <div className=" absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-64 h-12 ml-3 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
                               <div className="flex justify-between ">
                                 <span>
                                   <a href={item.link} target="_blank" rel="noopener noreferrer">

@@ -37,7 +37,7 @@ const WorksPage: React.FC = () => {
     <div className="px-8 md:px-16 py-16">
       <div className="max-w-6xl container mx-auto px-4">
             <div className="text-center mb-12 animate-fadeInDown " data-wow-delay=".4s">
-              <h2 className="font-bold mb-4 text-5xl font-serif text-gray-800 text-nowrap">Latest WorksPage</h2>
+              <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Latest WorksPage</h2>
               <p className="text-lg text-gray-600 mt-4 text-justify">
                 I have gained extensive experience as a frontend developer, focusing on creating responsive, user-friendly interfaces using modern technologies. The projects showcased below highlight some of my most recent work, where I applied tools like React.js, Next.js, and Tailwind CSS to deliver seamless UI/UX solutions tailored to user needs.</p>
 
@@ -78,7 +78,7 @@ const WorksPage: React.FC = () => {
                           height={300}
                           className="w-full h-64 relative  object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                        <div className=" z-10 absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-80 h-12 ml-4 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
+                        <div className=" z-10 absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-56 h-12 ml-4 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
                           <div className="flex justify-between ">
                             <span>
                               <Link href={item.link} target="_blank" rel="noopener noreferrer">
