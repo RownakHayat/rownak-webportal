@@ -14,7 +14,7 @@ const skills = [
 const profileDetails = [
   { label: 'Profile', value: 'Software Development' },
   { label: 'Technologies', value: 'React, Next.js, ' },
-  { label: 'Experience', value: 'Over 4 Years in the Tech Industry' },
+  { label: 'Experience', value: 'Over 3 Years 7 Months in the Tech Industry' },
   { label: 'Other Skills', value: 'Version Control,' },
   { label: 'Interests', value: 'Open Source, Software Innovation, Mentorship' },
 ];
@@ -38,7 +38,7 @@ const AboutMe = () => {
             />
             <div className="">
               <p><strong>Name:</strong> Rownak Hayat</p>
-              <p><strong>Job Role:</strong> Joniour Software Developer</p>
+              <p><strong>Job Role:</strong> Junior Software Developer</p>
               <p><strong>Experience:</strong> 3 Years 7 Months</p>
               <p><strong>Address:</strong> Dhaka, Bangladesh</p>
             </div>

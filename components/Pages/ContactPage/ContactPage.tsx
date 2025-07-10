@@ -59,8 +59,9 @@ const ContactPage: React.FC = () => {
       <div className="max-w-6xl container mx-auto ">
         <div className="text-center mb-12">
           <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
-          <p className="text-gray-600 text-justify">
-            I have gained extensive knowledge in frontend development improving UI/UX experience. Your satisfaction is my goal.
+          <p className="text-gray-600 text-center">
+            I’m a frontend-focused Software Developer who enjoys building clean, interactive user interfaces.
+            Got a project idea or just want to chat? Feel free to reach out!
           </p>
         </div>
 
