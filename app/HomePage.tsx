@@ -21,7 +21,7 @@ const HomePage = () => {
                     </h1>
                   </div>
                   <div className="">
-                    <h4 className='text-lg text-justify'>I’m a Frontend Developer with <span className='font-semibold'>3+ years</span> of experience in building clean, responsive and user-friendly web applications. I specialize in <span className='font-semibold'>React.js. and Next.js.</span> with strong skills in <span className='font-semibold'>API integration, UI optimization, and cross-functional collaboration.</span> I’m passionate about crafting elegant solutions and continuously evolving with the latest web technologies.</h4>
+                    <h4 className='text-lg text-justify'>I’m a Frontend Developer with <span className='font-semibold'>3+ years</span> of experience in building clean, responsive and user-friendly web applications. I specialize in <span className='font-semibold'>React.js. and Next.js.</span> with strong skills in <span className='font-semibold'>API integration, UI optimization and cross-functional collaboration.</span> I’m passionate about crafting elegant solutions and continuously evolving with the latest web technologies.</h4>
                   </div>
                 </div>
                 <div className="col-span-12 lg:col-span-6">
