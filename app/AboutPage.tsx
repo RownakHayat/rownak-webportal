@@ -21,7 +21,8 @@ const profileDetails = [
 
 const AboutMe = () => {
   return (
-   <div className="px-8 md:px-16 py-16">
+  <section id='about' className="px-8 md:px-16 py-28">
+     <div >
       <div className="max-w-6xl container mx-auto ">
 
        <h2 className="font-bold mb-8 text-3xl lg:text-5xl font-serif text-gray-800 text-center text-nowrap">About Me</h2>
@@ -101,6 +102,7 @@ const AboutMe = () => {
       </div>
       </div>
     </div>
+  </section>
   );
 };
 

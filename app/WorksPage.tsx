@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import React from 'react'
 
 const WorksPage: React.FC = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   const items = [
     {
@@ -29,13 +29,14 @@ const WorksPage: React.FC = () => {
 
   const visibleItems = items.slice(0, 4);
 
-  const handleViewAll = () => {
-    router.push('/works/work-details');
-  };
+  // const handleViewAll = () => {
+  //   router.push('/works/work-details');
+  // };
 
   return (
-    <div className="px-8 md:px-16 py-16">
-      <div className="max-w-6xl container mx-auto px-4">
+    <section id='works' className='px-8 md:px-16 py-28'>
+      <div className="">
+      <div className="max-w-6xl container mx-auto ">
             <div className="text-center mb-12 animate-fadeInDown " data-wow-delay=".4s">
               <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Latest WorksPage</h2>
               <p className="text-lg text-gray-600 mt-4 text-justify">
@@ -113,18 +114,19 @@ const WorksPage: React.FC = () => {
                 ))}
               </div>
 
-              <div className="text-center mt-12">
+              {/* <div className="text-center mt-12">
                 <button
                   onClick={handleViewAll}
                   className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
                 >
                   View All
                 </button>
-              </div>
+              </div> */}
 
             </div>
       </div>
     </div>
+    </section>
   )
 }
 

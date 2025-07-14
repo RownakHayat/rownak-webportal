@@ -1,21 +1,23 @@
+'use client';
 
-import About from "./about/page";
-import ContactSection from "./contact/page";
-import Home from "./home/page";
-import Works from "./works/page";
+import Navbar from "@/components/Navbar/Navbar";
+import HomePage from "./HomePage";
+import WorksPage from "./WorksPage";
+import Contact from "./contact/page";
+import AboutMe from "./AboutPage";
+import Footer from "@/components/footer/footer";
 
-
-
-export default function page() {
+export default function Page() {
   return (
-   <>
-  <Home />
-  {/* <ServicesDetails /> */}
-  <Works />
-  <About />
-  {/* <Review /> */}
-  {/* <Blog /> */}
-  <ContactSection />
-   </>
+    <>
+      <Navbar />
+      <main className="pt-[100px]">
+        <HomePage />
+        <WorksPage />
+        <AboutMe />
+        <Contact />
+      </main>
+      <Footer/>
+    </>
   );
 }

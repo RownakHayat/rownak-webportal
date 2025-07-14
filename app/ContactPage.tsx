@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, PhoneCall, Send, Globe } from 'lucide-react';
+import { MapPin, PhoneCall, Send, Globe, Github, GitBranch, LinkedinIcon } from 'lucide-react';
 import Link from 'next/link';
 
 
@@ -36,7 +36,7 @@ const ContactPage: React.FC = () => {
           href="/RownakHayat-Resume .pdf"
           download
           target="_blank"
-          className="inline-bloc font-semibold py-2 rounded-full transition"
+          className="inline-bloc underline font-semibold py-2 rounded-full transition cursor-pointer"
         >
           DOWNLOAD RESUME
         </Link>
@@ -55,66 +55,62 @@ const ContactPage: React.FC = () => {
   ];
 
   return (
-    <div className="px-8 md:px-16 py-16">
-      <div className="max-w-6xl container mx-auto ">
-        <div className="text-center mb-12">
-          <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
-          <p className="text-gray-600 text-center">
-            I’m a frontend-focused Software Developer who enjoys building clean, interactive user interfaces.
-            Got a project idea or just want to chat? Feel free to reach out!
-          </p>
-        </div>
+    <section id='contact' className='px-8 md:px-16 py-28'>
+        <div className="max-w-6xl container mx-auto ">
+          <div className="text-center mb-12">
+            <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Connect me </h2>
+            <p className="text-gray-600 text-center">
+              I’m a frontend-focused Software Developer who enjoys building clean, interactive user interfaces.
+              Got a project idea or just want to chat? Feel free to reach out!
+            </p>
+          </div>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 lg:col-span-6">
+              {/* Left - Contact Info */}
+              <div
+                className="p-8 rounded-lg bg-cover bg-center"
+                style={{ backgroundImage: `url('/images/contact.png')`, width: "100%", height: "100%" }}
+              >
+                <h4 className="text-2xl font-semibold mb-4 text-white">Get in Touch</h4>
+                <p className="mb-6 text-gray-300">
+                  Let’s connect on social media. If you’d like to reach out or collaborate, these platforms are a great place to start.
+                </p>
 
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 lg:col-span-6">
-            {/* Left - Contact Info */}
-            <div
-              className="p-8 rounded-lg bg-cover bg-center"
-              style={{ backgroundImage: `url('/images/contact.png')`, width: "100%", height: "100%" }}
-            >
-              <h4 className="text-2xl font-semibold mb-4 text-white">Get in Touch</h4>
-              <p className="mb-6 text-gray-300">
-                Let’s connect on social media. If you’d like to reach out or collaborate, these platforms are a great place to start.
-              </p>
-
-              {/* <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
-                <FacebookIcon />
+                <div className="flex space-x-4">
+              <a href="https://github.com/RownakHayat" className="text-white hover:text-blue-400" aria-label="Facebook">
+                <Github />
               </a>
-              <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
+              <a href="https://bitbucket.org/simec-web/workspace/overview/" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <GitBranch />
               </a>
-              <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
-                <PhoneCall />
-              </a>
-              <a href="#" className="text-white hover:text-blue-400" aria-label="Facebook">
+              <a href="https://www.linkedin.com/in/rownakhayat/" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <LinkedinIcon/>
               </a>
-            </div> */}
             </div>
-
-          </div>
-            <div className="col-span-12 lg:col-span-6">
-            {/* Right - Contact Form */}
-            <div className="">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 text-center text-black">
-                {contactItems.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center space-y-3 cursor-pointer">
-                    <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm mb-1 ">{item.label}</p>
-                      <p className="text-sm whitespace-pre-line">
-                        {typeof item.value === 'string' ? item.value : item.value}
-                      </p>
-                    </div>
-                  </div>
-                ))}
               </div>
-            </div>
 
-            {/* <div className="grid grid-cols-12 space-y-8">
+            </div>
+            <div className="col-span-12 lg:col-span-6">
+              {/* Right - Contact Form */}
+              <div className="">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 text-center text-black">
+                  {contactItems.map((item, index) => (
+                    <div key={index} className="flex flex-col items-center space-y-3 ">
+                      <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <p className="font-semibold text-sm mb-1 ">{item.label}</p>
+                        <p className="text-sm whitespace-pre-line">
+                          {typeof item.value === 'string' ? item.value : item.value}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* <div className="grid grid-cols-12 space-y-8">
            
             <form onSubmit={handleSubmit} className="grid grid-cols-12 space-y-8">
 
@@ -159,10 +155,10 @@ const ContactPage: React.FC = () => {
               
             </form> 
           </div>*/}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

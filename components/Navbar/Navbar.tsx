@@ -6,20 +6,20 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 const navigation = [
-  { href: '/home', label: 'Home' },
+  { href: '#home', label: 'Home' },
   // { href: '/services', label: 'Services' },
-  { href: '/works', label: 'Works' },
-  { href: '/about', label: 'About' },
+  { href: '#works', label: 'Works' },
+  { href: '#about', label: 'About' },
   // { href: '/review', label: 'Review' },
   // { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow fixed w-full z-[999]">
 
       <div className="max-w-6xl mx-auto">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -62,14 +62,14 @@ const Navbar = () => {
                 </li>
               ))}
               {/* CTA Button */}
-              <li className="mt-2 lg:mt-0">
+              {/* <li className="mt-2 lg:mt-0">
                 <Link
                   href="#contact-section"
                   className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full transition"
                 >
                   Hire me
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

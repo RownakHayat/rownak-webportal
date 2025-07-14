@@ -51,13 +51,15 @@ const ExperiencePage: React.FC = () => {
   ]
 
   return (
-    <div className="py-12 bg-white">
-      <div className="flex flex-wrap justify-center max-w-6xl mx-auto">
+    <div className="py-12 px-8 md:px-16 bg-white">
+     <div className="max-w-6xl container mx-auto ">
+       <div className="flex flex-wrap justify-center max-w-6xl mx-auto">
         {data.map((item, index) => (
           <CounterCard key={index} target={item.target} title={item.title} />
         ))}
       </div>
       <div className="border-t border-blue-400 mt-10 pt-4 mx-4"></div>
+     </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import ContactPage from '@/components/Pages/ContactPage/ContactPage'
+import ContactPage from '@/app/ContactPage'
 import React from 'react'
 
 const Contact = () => {
