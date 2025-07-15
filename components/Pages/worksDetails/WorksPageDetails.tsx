@@ -29,13 +29,27 @@ const WorksPageDetails = () => {
         },
         {
           id: '3',
+          title: 'MOL-Library ',
+          image: '/images/work/MOL-Library.png',
+          link: 'https://services.smef.gov.bd/',
+          filters: ['filter-mol'],
+        },
+        {
+          id: '4',
+          title: 'DPS-MoCAT ',
+          image: '/images/work/DPS.MoCAT.png',
+          link: 'https://services.smef.gov.bd/',
+          filters: ['filter-dps'],
+        },
+        {
+          id: '5',
           title: 'HRM',
           image: '/images/work/SIMEC-HELP-Desk.png',
           link: 'https://hrm-simec-help-desk.netlify.app/',
           filters: ['filter-hrm'],
         },
         {
-          id: '4',
+          id: '6',
           title: 'e-buisness',
           image: '/images/work/e-buisness.png',
           link: 'https://e-buisness.netlify.app/',
@@ -71,6 +85,32 @@ const WorksPageDetails = () => {
     },
     {
       id: '4',
+      label: 'Ministy Of Law Library',
+      filtersAll: [
+        {
+          id: '1',
+          title: 'All',
+          images: ['/images/work/MOL-Library.png'],
+          link: 'http://103.84.36.246:8880/mol-library/public/',
+          filters: ['filter-mol'],
+        },
+      ],
+    },
+    {
+      id: '5',
+      label: 'DPS-Ministy Of Civil Aviation And Tourism',
+      filtersAll: [
+        {
+          id: '1',
+          title: 'All',
+          images: ['/images/work/DPS.MoCAT.png'],
+          link: 'http://103.84.36.246:6002/',
+          filters: ['filter-dps'],
+        },
+      ],
+    },
+    {
+      id: '6',
       label: 'HRM ',
       filtersAll: [
         {
@@ -83,7 +123,7 @@ const WorksPageDetails = () => {
       ],
     },
     {
-      id: '5',
+      id: '7',
       label: 'e-Buisness ',
       filtersAll: [
         {
