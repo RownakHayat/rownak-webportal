@@ -188,7 +188,7 @@ const WorksPageDetails = () => {
                               alt={item.title}
                               width={250}
                               height={250}
-                              className="w-full h-64 relative  object-cover transition-transform duration-300 group-hover:scale-105"
+                              className="w-[350px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[450px] lg:h-[350px]   relative  object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <div className=" absolute transition-transform duration-300 opacity-100 text-2xl font-semibold text-white pt-10 group-hover:opacity-100 group-hover:text-black group-hover:translate-y-[-3.55rem] group-hover:rounded-lg group-hover:bg-white w-64 h-12 ml-3 group-hover:pl-3 group-hover:pr-4 group-hover:py-2">
                               <div className="flex justify-between ">
