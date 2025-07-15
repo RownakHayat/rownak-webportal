@@ -18,16 +18,25 @@ const WorksPage: React.FC = () => {
       link: 'https://services.smef.gov.bd/',
     },
     {
+      title: 'MOL Library', image: '/images/work/MOL-Library.png',
+      link: 'http://103.84.36.246:8880/mol-library/public/',
+    },
+    {
       title: 'HRM', image: '/images/work/SIMEC-HELP-Desk.png',
       link: 'https://hrm-simec-help-desk.netlify.app/',
+    },
+    {
+      title: 'DPS. MoCAT', image: '/images/work/DPS.MoCAT.png',
+      link: 'http://103.84.36.246:6002/',
     },
     {
       title: 'e-Buisness', image: '/images/work/e-buisness.png',
       link: 'https://e-buisness.netlify.app/',
     },
+    
   ];
 
-  const visibleItems = items.slice(0, 4);
+  // const visibleItems = items.slice(0, 20);
 
   // const handleViewAll = () => {
   //   router.push('/works/work-details');
@@ -66,8 +75,8 @@ const WorksPage: React.FC = () => {
             </div>
             {/* Work Cards */}
             <div className="">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-fadeInUp" data-wow-delay=".4s">
-                {visibleItems.map((item, idx) => (
+              <div className="grid grid-cols-12 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fadeInUp" data-wow-delay=".4s">
+                {items.map((item, idx) => (
 
                   <div key={idx} className="bg-white shadow-lg cursor-pointer rounded-2xl overflow-hidden transition-transform hover:scale-105 ">
                     <Link href={item.link} target="_blank" rel="noopener noreferrer">
