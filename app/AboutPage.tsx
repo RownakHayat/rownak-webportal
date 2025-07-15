@@ -40,7 +40,7 @@ const AboutMe = () => {
             <div className="">
               <p><strong>Name:</strong> Rownak Hayat</p>
               <p><strong>Job Role:</strong> Junior Software Developer</p>
-              <p><strong>Experience:</strong> 3 Years 7 Months</p>
+              <p><strong>Experience:</strong> 2 Years 7 Months</p>
               <p><strong>Address:</strong> Dhaka, Bangladesh</p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const AboutMe = () => {
         <div>
          
          <p className="text-black mb-6 leading-relaxed text-justify">
-          With over 3 years of hands-on experience in software engineering, I specialize in building modern, responsive, and high-performance frontend applications. My expertise lies in React.js and Next.js, where I focus on creating intuitive user interfaces and seamless user experiences. I am also proficient in integrating RESTful and GraphQL APIs, ensuring smooth data flow and dynamic functionality across applications. I’m passionate about turning complex requirements into clean, scalable code and thrive on delivering impactful, user-centric solutions.
+          With over 2 years of hands-on experience in software engineering, I specialize in building modern, responsive and high-performance frontend applications. My expertise lies in React.js and Next.js, where I focus on creating intuitive user interfaces and seamless user experiences. I am also proficient in integrating RESTful and GraphQL APIs, ensuring smooth data flow and dynamic functionality across applications. I’m passionate about turning complex requirements into clean, scalable code and thrive on delivering impactful, user-centric solutions.
         </p>
 
           <div className="space-y-4 text-sm">
