@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <nav
             className={`${menuOpen ? 'block' : 'hidden'
-              } absolute lg:static top-[10%] left-0 w-full lg:w-auto bg-white lg:bg-transparent z-50 lg:flex items-center space-y-4 lg:space-y-0 lg:space-x-6 px-4 lg:px-0 mt-4 lg:mt-0 shadow-lg lg:shadow-none`}
+              } absolute lg:static top-[70%] left-0 w-full lg:w-auto bg-white lg:bg-transparent z-50 lg:flex items-center space-y-4 lg:space-y-0 lg:space-x-6 px-4 lg:px-0 mt-4 lg:mt-0 shadow-lg lg:shadow-none`}
           >
             <ul className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
               {navigation.map(({ href, label }) => (
