@@ -1,5 +1,6 @@
 // AboutMe.tsx
 // import { Github, LinkedinIcon } from 'lucide-react';
+import { LinkedinIcon } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -98,7 +99,7 @@ const AboutMe = () => {
               className="inline-block px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
             >
               LINKEDIN
-              {/* <span><LinkedinIcon /></span> */}
+              <span><LinkedinIcon /></span>
             </a>
 
             <a
