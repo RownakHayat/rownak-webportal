@@ -54,7 +54,7 @@ const WorksPage: React.FC = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-12">
               <div className="text-center mb-12 animate-fadeInDown " data-wow-delay=".4s">
-                <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Latest WorksPage</h2>
+                <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Latest Works</h2>
                 <p className="text-lg text-gray-600 mt-4 text-justify">
                   I have gained extensive experience as a frontend developer, focusing on creating responsive, user-friendly interfaces using modern technologies. The projects showcased below highlight some of my most recent work, where I applied tools like React.js., Next.js. and Tailwind CSS to deliver seamless UI/UX solutions tailored to user needs.</p>
 

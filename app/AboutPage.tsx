@@ -14,9 +14,9 @@ const skills = [
 
 const profileDetails = [
   { label: 'Profile', value: 'Software Development' },
-  { label: 'Technologies', value: 'React, Next.js, ' },
+  { label: 'Technologies', value: 'React.js, Next.js ' },
   { label: 'Experience', value: 'Over 2 Years 7 Months in the Tech Industry' },
-  { label: 'Other Skills', value: 'Version Control,' },
+  { label: 'Other Skills', value: 'Version Control' },
   { label: 'Interests', value: 'Open Source, Software Innovation, Mentorship' },
 ];
 
