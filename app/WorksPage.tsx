@@ -22,7 +22,7 @@ const WorksPage: React.FC = () => {
     {
       title: 'MOL Library', image: '/images/work/MOL-Library.png',
       link: 'http://103.84.36.246:8880/mol-library/public/',
-      label: 'Ministry Of Law Library.'
+      label: 'Ministry Of Law Library.',
     },
     {
       title: 'DPS.MoCAT', image: '/images/work/DPS.MoCAT.png',
