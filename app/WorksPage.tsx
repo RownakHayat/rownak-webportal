@@ -56,8 +56,8 @@ const WorksPage: React.FC = () => {
               <div className="text-center mb-12 animate-fadeInDown " data-wow-delay=".4s">
                 <h2 className="font-bold mb-4 text-3xl lg:text-5xl font-serif text-gray-800 text-nowrap">Latest Works</h2>
                 <p className="text-lg text-gray-600 mt-4 text-justify">
-                  I have gained extensive experience as a frontend developer, focusing on creating responsive, user-friendly interfaces using modern technologies. The projects showcased below highlight some of my most recent work, where I applied tools like React.js., Next.js. and Tailwind CSS to deliver seamless UI/UX solutions tailored to user needs.</p>
-
+                  I have gained extensive experience as a frontend developer, focusing on creating responsive, user-friendly interfaces using modern technologies. The projects showcased below highlight some of my most recent works, where I applied tools like React.js., Next.js. and Tailwind CSS to deliver seamless UI/UX solutions tailored to user needs.
+                </p>
               </div>
               {/* <div
               className="text-center mb-8 animate-fadeInUp "
@@ -68,8 +68,8 @@ const WorksPage: React.FC = () => {
                   <div key={item} className="inline-block">
                     <div
                       className="relative inline-block px-10 py-2 border border-[#2c2c2c] rounded-full text-[16px] bg-[#E9E9E9] overflow-hidden group 
-             transition-colors duration-300 
-             animate-fadeInDown md:animate-fadeInUp"
+                    transition-colors duration-300 
+                    animate-fadeInDown md:animate-fadeInUp"
                     >
                       <span className="absolute inset-0 bg-white z-[-1] scale-y-100 group-hover:scale-y-0 origin-center transition-transform duration-300 ease-out" />
                       {item}

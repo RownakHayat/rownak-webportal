@@ -97,17 +97,16 @@ const AboutMe = () => {
               rel="noopener noreferrer"
               className="inline-block px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
             >
-              LINKEDIN
+              Linkedin
               {/* <span><LinkedinIcon /></span> */}
             </a>
-
             <a
               href="https://github.com/RownakHayat"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-5 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
+              className="inline-block px-7 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
             >
-              GitHub
+              Github
               {/* <Github /> */}
             </a>
           </div>
