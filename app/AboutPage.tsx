@@ -14,7 +14,7 @@ const skills = [
 const profileDetails = [
   { label: 'Profile', value: 'Software Development' },
   { label: 'Technologies', value: 'React, Next.js, ' },
-  { label: 'Experience', value: 'Over 3 Years 7 Months in the Tech Industry' },
+  { label: 'Experience', value: 'Over 2 Years 7 Months in the Tech Industry' },
   { label: 'Other Skills', value: 'Version Control,' },
   { label: 'Interests', value: 'Open Source, Software Innovation, Mentorship' },
 ];
@@ -87,8 +87,9 @@ const AboutMe = () => {
             <span className="text-blue-500 font-bold text-2xl">30+</span>
             <span className="text-white text-lg">Projects completed</span>
           </div> */}
-
-          <div className="mt-20">
+        </div>
+      </div>
+      <div className="mt-20">
             <a
               href="https://www.linkedin.com/in/rownakhayat/" // replace with your actual profile
               target="_blank"
@@ -98,8 +99,6 @@ const AboutMe = () => {
               LINKEDIN
             </a>
           </div>
-        </div>
-      </div>
       </div>
     </div>
   </section>
