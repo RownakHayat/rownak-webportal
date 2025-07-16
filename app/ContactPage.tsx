@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, PhoneCall, Send, Globe, Github, GitBranch, LinkedinIcon } from 'lucide-react';
+import { MapPin, PhoneCall, Send, Globe, Github, LinkedinIcon } from 'lucide-react';
 import Link from 'next/link';
 
 
@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     {
       icon: <MapPin className="text-blue-400 w-7 h-7" />,
       label: 'ADDRESS',
-      value: 'Uttara, Dhaka,\nBangladesh',
+      value: 'Uttara, Dhaka, Bangladesh',
     },
     {
       icon: <PhoneCall className="text-blue-400 w-7 h-7" />,
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
       icon: <Globe className="text-blue-400 w-7 h-7" />,
       label: (
         <Link
-          href="/RownakHayat-Resume .pdf"
+          href="/rownak-hayat_cv (software development).pdf"
           download
           target="_blank"
           className="inline-bloc underline font-semibold py-2 rounded-full transition cursor-pointer"
@@ -80,9 +80,9 @@ const ContactPage: React.FC = () => {
               <a href="https://github.com/RownakHayat" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <Github />
               </a>
-              <a href="https://bitbucket.org/simec-web/workspace/overview/" className="text-white hover:text-blue-400" aria-label="Facebook">
+              {/* <a href="https://bitbucket.org/simec-web/workspace/overview/" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <GitBranch />
-              </a>
+              </a> */}
               <a href="https://www.linkedin.com/in/rownakhayat/" className="text-white hover:text-blue-400" aria-label="Facebook">
                 <LinkedinIcon/>
               </a>

@@ -63,7 +63,7 @@ const HomePage = () => {
                         {/* <div className="cv-content"> */}
                         <div className="absolute left-[-3rem] lg:left-[-5rem] top-3/5 lg:top-3/4 transform -translate-y-1/2">
                           <Link
-                            href="/RownakHayat-Resume .pdf"
+                            href="/rownak-hayat_cv (software development).pdf"
                             download
                             target="_blank"
                             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 lg:py-2 px-3 lg:px-5 text-sm lg:text-md rounded-full transition"
