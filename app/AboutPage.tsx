@@ -14,10 +14,15 @@ const skills = [
 
 const profileDetails = [
   { label: 'Profile', value: 'Software Development' },
-  { label: 'Technologies', value: 'React.js, Next.js ' },
+  { label: 'Experience', value: 'Over 3Years in the Tech Industry' },
+  { label: 'Frontend Development:', value: 'React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, jQuery, Material UI, Shadcn UI' },
+  { label: 'State Management:', value: 'Redux Toolkit, Zustand' },
+  { label: 'API Integration:', value: 'REST APIs' },
+  { label: 'Tools & Platforms:', value: 'Git, JIRA, CI/CD Pipelines, Docker, Kubernetes, Google Authentication' },
   { label: 'Experience', value: 'Over 2 Years 7 Months in the Tech Industry' },
-  { label: 'Other Skills', value: 'Version Control' },
-  { label: 'Interests', value: 'Open Source, Software Innovation, Mentorship' },
+  { label: 'Cloud & AWS Services:', value: 'AWS (S3, EC2, CloudFront, API Gateway, VPC, CloudWatch, Cognito)' },
+  { label: 'Operating Systems:', value: 'Windows, Linux' },
+  { label: 'UI/UX & Performance:', value: 'Responsive Design, Cross-Browser Compatibility, Performance Optimization, Component-Based Architecture' },
 ];
 
 const AboutMe = () => {
@@ -72,7 +77,8 @@ const AboutMe = () => {
             <div>
 
               <p className="text-black mb-6 leading-relaxed text-justify">
-                With over 3 years of hands-on experience in software engineering, I specialize in building modern, responsive and high-performance frontend applications. My expertise lies in React.js and Next.js, where I focus on creating intuitive user interfaces and seamless user experiences. I’m also proficient in integrating RESTful and GraphQL APIs, ensuring smooth data flow and dynamic functionality across applications. I’m passionate about turning complex requirements into clean, scalable code and thrive on delivering impactful, user-centric solutions.
+                With over 3 years of hands-on experience in software engineering, I specialize in building modern, responsive and high-performance frontend applications. My expertise lies in React.js and Next.js, where I focus on creating intuitive user interfaces and seamless user experiences. I’m also proficient in integrating RESTful and GraphQL APIs, ensuring smooth data flow and dynamic functionality across applications. I’m passionate about turning complex requirements into clean, pixel-perfect code while leveraging context-driven development patterns (React Context,
+                state management and component composition) to build scalable, user-centric solutions.
               </p>
 
               <div className="space-y-4 text-sm">

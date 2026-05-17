@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     {
       icon: <MapPin className="text-blue-400 w-7 h-7" />,
       label: 'ADDRESS',
-      value: 'Uttara, Dhaka, Bangladesh',
+      value: 'Dhaka, Bangladesh',
     },
     {
       icon: <PhoneCall className="text-blue-400 w-7 h-7" />,
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
       icon: <Globe className="text-blue-400 w-7 h-7" />,
       label: (
         <Link
-          href="/rownak-hayat_cv (software development).pdf"
+          href="/RownakHayat_cv.pdf"
           download
           target="_blank"
           className="inline-bloc underline font-semibold py-2 rounded-full transition cursor-pointer"
