@@ -19,7 +19,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow fixed w-full z-[999]">
+    <header className="bg-white fixed w-full z-[999]">
 
       <div className="max-w-6xl mx-auto">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
