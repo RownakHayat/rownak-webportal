@@ -1,0 +1,20 @@
+[Unit]
+Description=Rownak Webportal - Next.js Application
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/rownakhayat-portfolio/rownak-webportal
+ExecStart=/home/ec2-user/.nvm/versions/node/v20.20.2/bin/node /home/ec2-user/rownakhayat-portfolio/rownak-webportal/node_modules/.bin/next start
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rownak-webportal
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=PATH=/home/ec2-user/.nvm/versions/node/v20.20.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+[Install]
+WantedBy=multi-user.target

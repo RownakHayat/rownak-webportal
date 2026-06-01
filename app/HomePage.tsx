@@ -28,7 +28,7 @@ const HomePage = () => {
                   <div className="flex justify-end">
                     <div className=" relative">
                       <Image
-                        src={"/images/blog/bannerImage.jpg"}
+                        src={"/images/blog/rownak.JPG"}
                         alt="Resume image"
                         width={450}
                         height={400}
